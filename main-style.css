@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+
+body{
+    background-image: url(back.jpg);
+    font-size: 16px;
+    font-weight: normal;  
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.left-menu{
+    border: 4px solid black;
+    width: 200px;
+    height: 100%;
+}
