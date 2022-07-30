@@ -5,10 +5,59 @@ body{
     font-size: 16px;
     font-weight: normal;  
     font-family: 'Edu TAS Beginner', cursive;
+    display: flex;
+    justify-content: start;
 }
 
-.left-menu{
-    border: 4px solid black;
-    width: 200px;
-    height: 100%;
+
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 98vh;
+  width: 10%;
+  
+}
+
+.item {
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;;
+  height:100%;
+  width:100%;
+  text-align: center;
+}
+
+.modul{
+  display: flex;
+  border: 3px solid red;
+  width: auto;
+  height: min-content;
+  justify-content: center;
+}
+.homework {
+  width: 50%;
+  height: 50%;
+  margin-top: 5%;
+}
+.info{
+  border: 5px solid red ;
+}
+.image{
+  width: 100%;
+  height: 100%;
+}
+
+.main-window{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+.main-list{
+  display: flex;
+justify-content: center;
+border: 4px solid black;
+width: 150ch;
+height: 100ch;
 }

@@ -1,17 +1,9 @@
 
-const embedData = (data) => {
-    console.log(data)
-    let container = document.getElementById('app');
-    data.forEach((todo, index) => {
-        let item = document.createElement('div');
-        item.style.fontSize = '1rem';
-        item.style.marginBottom = '1rem';
-        item.innerText = `${index + 1}. ${todo.title}`;
-        container.appendChild(item);
-    })
+document.getElementsByClassName("menu-btn") = () => {
+const login = document.getElementById ("login")
+const pass = document.getElementById ("password")
+const
+if (login == 0 && pass == 0) {
+    window.location.href = "/"
 }
-const url = `https://jsonplaceholder.typicode.com/todos`;
-fetch(url, {method: 'GET'})
-    .then((response) => response.json())
-    .then((data) => embedData(data))
-    .catch((error) => console.error(error))
+}
