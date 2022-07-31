@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework</title>
+    <script src="main.js" defer></script>
+    <script>
+        const watchPageRendered = () => {
+            if (document.getElementById('homework-list')) {
+                getHomework();
+                clearInterval(interval);
+            }
+        }
+        let interval = setInterval(watchPageRendered, 100);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <ol id="homework-list"></ol>
+    </div>
+</body>
+</html>

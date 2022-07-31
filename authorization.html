@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Authorization</title>
     <link rel="stylesheet" href="authorization-style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -11,25 +12,24 @@
             <div class="form">
                 <div class="row">
                    <ul type="none">
-                    <div class="form-group">
-                       <li> <label for="login">Ваш логин:</label>
-                        <input type="text" id="login" placeholder="Введите ваш логин"> </li>
-                    </div>
-    
-                    
-    
-                    <div class="form-group">
-                      <li>  <label for="password">Ваш пароль:</label>
-                        <input type="password" id="password" placeholder="Введите ваш пароль..."> </li>
-                    </div>
+                        <div class="form-group">
+                           <li> <label for="login">Ваш логин:</label>
+                            <input type="text" id="login" placeholder="Введите ваш логин"> </li>
+                        </div>
+
+
+
+                        <div class="form-group">
+                          <li>  <label for="password">Ваш пароль:</label>
+                            <input type="password" id="password" placeholder="Введите ваш пароль..."> </li>
+                        </div>
                    </ul>
                 </div>
      
     
-                <button class="btn" type="submit" onclick="login"> Авторизоваться</button>
+                <button id="submit-button" class="btn" type="submit" onclick="login()">Авторизоваться</button>
             </div> 
         </div>
     </div>
-    <script src="main.js"></script>
 </body>
 </html>
