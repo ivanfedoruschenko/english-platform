@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
 
 body{
-    background-image: url(back.jpg);
+    background-image: url(img/back.jpg);
     font-size: 16px;
     font-weight: normal;  
     font-family: 'Edu TAS Beginner', cursive;
@@ -9,20 +9,17 @@ body{
     justify-content: start;
 }
 
-
-
 .menu{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   height: 98vh;
   width: 10%;
-  
 }
 
 .item {
-  border-top: 4px solid black;
-  border-bottom: 4px solid black;;
+  border-right: 4px solid black;
+  border-left:  4px solid black;
   height:100%;
   width:100%;
   text-align: center;
@@ -36,10 +33,48 @@ body{
   justify-content: center;
 }
 .homework {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 30%;
   margin-top: 5%;
+  border-top:  4px solid black;
+  border-bottom:  4px solid black;
 }
+
+.notification{
+  width: 40%;
+  height: 30%;
+  border-bottom:  4px solid black;
+}
+.video {
+  width: 40%;
+  height: 30%;
+  border-bottom:  4px solid black;
+}
+
+.audio{
+  width: 40%;
+  height: 30%;
+  border-bottom:  4px solid black;
+}
+
+.reading {
+  width: 40%;
+  height: 30%;
+  border-bottom:  4px solid black;
+}
+
+.vocabulary{
+    width: 40%;
+    height: 30%;
+    border-bottom:  4px solid black;
+}
+
+.grammar {
+  width: 40%;
+  height: 30%;
+  border-bottom:  4px solid black;
+}
+
 .info{
   border: 5px solid red ;
 }
@@ -52,6 +87,7 @@ body{
   display: flex;
   flex-direction: column;
   margin-left: 5%;
+  align-items: center;
 }
 
 .main-list{
@@ -59,5 +95,10 @@ body{
 justify-content: center;
 border: 4px solid black;
 width: 150ch;
-height: 100ch;
+height: max-content;
+}
+
+.main-list td {
+  display: flex;
+  border: 3px black solid;
 }

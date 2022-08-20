@@ -3,20 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Homework</title>
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="main-style.css">
+    <script src="homework.js" defer></script>
     <script>
         const watchPageRendered = () => {
-            if (document.getElementById('homework-list')) {
+            if (document.getElementById ('list')) {
                 getHomework();
                 clearInterval(interval);
             }
         }
         let interval = setInterval(watchPageRendered, 100);
     </script>
+
 </head>
 <body>
-    <div class="container">
-        <ol id="homework-list"></ol>
+    <div class="menu">
+        <div class="item info">Информация о Студенте</div>
+        <div class="item homework"> <a href="homework.html" ><img src="img/homework.png"  class="image"> </a></div>
+        <div class="item notification"><a href="notification.html" target="_blank"><img src="img/notification.png"  class="image"></a>
+        </div>
+        <div class="item video"><a href="video.html" target="_blank"><img src="img/video.png" class="image"></a></div>
+        <div class="item audio"><a href="audio.html" target="_blank"><img src="img/audio.png" class="image"></a></div>
+        <div class="item reading"><a href="reading.html" target="_blank"><img src="img/reading.png" class="image"></a></div>
+        <div class="item grammar"><a href="" target="_blank"><img src="img/grammar.png" class="image"></a></div>
+        <div class="item vocabulary"><a href="" target="_blank"><img src="img/vocabulary.png" class="image"></a></div>
     </div>
+   <div class="main-window">
+        <div class="modul">Студент</div>
+        <div class="main-list">
+            <ol id = "list"></ol>
+        </div>
+    </div>
+
 </body>
+</html>
 </html>

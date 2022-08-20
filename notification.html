@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>notification</title>
+  <script src="main.js" defer></script>
+ 
+  <script>
+    const watchPageRendered = () => {
+        if (document.getElementById('notification-list')) {
+            getNotification();
+            clearInterval(interval);
+        }
+    }
+    let interval = setInterval(watchPageRendered, 100);
+</script>
+   
+</head>
+<body>
+    <div class="container">
+        <ol id="notification-list"></ol>
+    </div>
+</body>
+</html>
