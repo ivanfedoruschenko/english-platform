@@ -25,6 +25,16 @@ body{
     border: black 4px solid;
     border-radius: 28px;  
     margin-top: 10%;
+    transform: translateX(150%);
+    transition: 1s;
+}
+
+.info {
+    position: relative;
+}
+
+.info:hover .info-text {
+    transform: translateX(0);
 }
 
 .name{

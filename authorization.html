@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Authorization</title>
     <link rel="stylesheet" href="authorization-style.css">
-    <script src="main.js" defer></script>
+    
 </head>
 <body>
     <div class="container">
@@ -27,9 +27,15 @@
                 </div>
      
     
-                <button id="submit-button" class="btn"  >Авторизоваться</button>
+                <button id="submit-button" class="btn" onclick= "register ()" >Регистрация</button>
+                <button id="login-button" class="btn" onclick= "login ()" >Вход</button>
             </div> 
         </div>
     </div>
 </body>
+
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+<script src="authorization.js" defer></script>
 </html>
